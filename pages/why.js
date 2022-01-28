@@ -87,8 +87,8 @@ const why = () => {
               Massage can help to improve your self confidence and self esteem.
             </li>
             <li>
-              It releases endorphins, which are the body's natural "feel good"
-              chemicals, giving you a natural high.
+              It releases endorphins, which are the body&apos;s natural
+              &quot;feel good&quot; chemicals, giving you a natural high.
             </li>
             <li>Massage creates an overall feeling of wellbeing</li>
           </ul>

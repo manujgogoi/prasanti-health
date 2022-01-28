@@ -1,0 +1,6 @@
+.h1 {
+  color: red;
+}
+.gradient {
+  background: linear-gradient(45deg, blue, white);
+}

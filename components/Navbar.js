@@ -135,6 +135,11 @@ const Navbar = () => {
                   Yogalaya
                 </a>
               </Link>
+              <Link href="/healthcare">
+                <a className="block m-5 p-3 rounded text-xl hover:bg-green-700 hover:text-white transition-all duration-100">
+                  Healthcare
+                </a>
+              </Link>
               <Link href="/contact">
                 <a className="block m-5 p-3 rounded text-xl hover:bg-green-700 hover:text-white transition-all duration-100">
                   Contact

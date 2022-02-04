@@ -8,11 +8,11 @@ const Navbar = () => {
   return (
     <div>
       {/* Main Nav container */}
-      <nav className="shadow-md w-full bg-green-200 uppercase">
+      <nav className="shadow shadow-black w-full bg-green-900 bg-opacity-90 fixed z-50 uppercase">
         <div className="w-full">
           <div className="flex items-center h-20 w-full py-1">
             {/* First block section outer part */}
-            <div className="flex items items-center mx-5 md:mx-20 justify-between w-full">
+            <div className="flex items items-center mx-3 md:mx-20 justify-between w-full">
               <div className="flex justify-center items-center flex-shrink-0 space-x-1">
                 <Image
                   src="/images/Logo.png"
@@ -21,31 +21,40 @@ const Navbar = () => {
                   alt="Prasanti Healthcare Logo"
                 />
                 <h1 className="font-bold text-xl cursor-pointer">
-                  <span className="text-blue-500">Prasanti</span>{" "}
-                  <span className="text-green-500">Healthcare</span>
+                  <p className="text-white text-5xl">PIISM</p>
                 </h1>
               </div>
 
-              {/* Menu for greater than medium screens. hidden on small screens */}
-              <div className="hidden md:block">
+              {/* Menu for large screens. hidden on small screens */}
+              <div className="hidden lg:block text-white">
                 <div>
                   <Link href="/">
-                    <a className="cursor-pointer font-semibold px-3 py-2 hover:text-red-500">
+                    <a className="cursor-pointer font-semibold px-3 py-2 hover:text-gray-800">
                       Home
                     </a>
                   </Link>
                   <Link href="/about">
-                    <a className="cursor-pointer font-semibold px-3 py-2 hover:text-red-500">
+                    <a className="cursor-pointer font-semibold px-3 py-2 hover:text-gray-800">
                       About
                     </a>
                   </Link>
-                  <Link href="/why">
-                    <a className="cursor-pointer font-semibold px-3 py-2 hover:text-red-500">
-                      Why?
+                  <Link href="/ayurveda">
+                    <a className="cursor-pointer font-semibold px-3 py-2 hover:text-gray-800">
+                      Ayurveda
+                    </a>
+                  </Link>
+                  <Link href="/yogalaya">
+                    <a className="cursor-pointer font-semibold px-3 py-2 hover:text-gray-800">
+                      Yogalaya
+                    </a>
+                  </Link>
+                  <Link href="/healthcare">
+                    <a className="cursor-pointer font-semibold px-3 py-2 hover:text-gray-800">
+                      Healthcare
                     </a>
                   </Link>
                   <Link href="/contact">
-                    <a className="cursor-pointer bg-green-500 rounded text-white font-semibold px-3 py-2 hover:bg-green-800">
+                    <a className="cursor-pointer bg-green-600 rounded shadow text-white font-semibold px-3 py-2 hover:bg-green-500">
                       Contact
                     </a>
                   </Link>
@@ -53,11 +62,11 @@ const Navbar = () => {
               </div>
             </div>
             {/* Mobile Menu */}
-            <div className="mr-5 flex md:hidden">
+            <div className="mr-5 flex lg:hidden">
               <button
                 onClick={() => setIsNavOpen(!isNavOpen)}
                 type="button"
-                className="px-5 py-2 min-w-max border rounded bg-indigo-600 text-white"
+                className="px-5 py-2 min-w-max rounded bg-green-700 text-white"
               >
                 <span className="sr-only">Open main menu</span>
                 {!isNavOpen ? (
@@ -104,25 +113,30 @@ const Navbar = () => {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <div className="md:hidden">
+          <div className="lg:hidden text-white">
             <div>
               <Link href="/">
-                <a className="block m-5 p-3 rounded text-xl hover:bg-blue-600 hover:text-white transition-all duration-100">
+                <a className="block m-5 p-3 rounded text-xl hover:bg-green-700 hover:text-white transition-all duration-100">
                   Home
                 </a>
               </Link>
               <Link href="/about">
-                <a className="block m-5 p-3 rounded text-xl hover:bg-blue-600 hover:text-white transition-all duration-100">
+                <a className="block m-5 p-3 rounded text-xl hover:bg-green-700 hover:text-white transition-all duration-100">
                   About
                 </a>
               </Link>
-              <Link href="/why">
-                <a className="block m-5 p-3 rounded text-xl hover:bg-blue-600 hover:text-white transition-all duration-100">
-                  Why?
+              <Link href="/ayurveda">
+                <a className="block m-5 p-3 rounded text-xl hover:bg-green-700 hover:text-white transition-all duration-100">
+                  Ayurveda
+                </a>
+              </Link>
+              <Link href="/yogalaya">
+                <a className="block m-5 p-3 rounded text-xl hover:bg-green-700 hover:text-white transition-all duration-100">
+                  Yogalaya
                 </a>
               </Link>
               <Link href="/contact">
-                <a className="block m-5 p-3 rounded text-xl hover:bg-blue-600 hover:text-white transition-all duration-100">
+                <a className="block m-5 p-3 rounded text-xl hover:bg-green-700 hover:text-white transition-all duration-100">
                   Contact
                 </a>
               </Link>

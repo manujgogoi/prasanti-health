@@ -3,13 +3,24 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full h- bg-gradient-to-br from-gray-900 to-black text-gray-400 py-10 px-3">
-      <div className="grid grid-cols-1 md:grid-cols-4">
+    <footer className="w-full h- bg-gradient-to-br from-gray-800 via-gray-900 to-black text-gray-400 py-10 px-3">
+      <div>
+        <div className="text-center">
+          <Image
+            src="/images/Logo.png"
+            width={80}
+            height={80}
+            alt="Prasanti Logo"
+          />
+          <h4 className="text-2xl">PIISM</h4>
+        </div>
+      </div>
+      {/* <div className="grid grid-cols-1 md:grid-cols-4">
         <div>
           <div>
             <Image src="/images/Logo.png" width={80} height={80} />
           </div>
-          <h3>Prasanti Healthcare</h3>
+          <h3>PIISM</h3>
           <p>The alternative treatment centre</p>
         </div>
         <div className="pr-5">
@@ -84,7 +95,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="text-center pt-10">
         Copyright &#169; 2022. All rights reserved.
       </div>
